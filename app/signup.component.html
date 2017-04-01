@@ -1,0 +1,28 @@
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ 
+ <div class="login jumbotron center-block">
+   <h1>Signup</h1>
+   <form role="form" (submit)="writeString(name.value, lastname.value, username.value, password.value, mail.value)">
+   <div class="form-group">
+     <label for="name">Name</label>
+     <input type="text" #name class="form-control" id="name" placeholder="Name">
+   </div>
+   <div class="form-group">
+     <label for="lastname">LastName</label>
+     <input type="text" #lastname class="form-control" id="lastname" placeholder="Lastname">
+   </div>
+   <div class="form-group">
+     <label for="username">Username</label>
+     <input type="text" #username class="form-control" id="username" placeholder="Username">
+   </div>
+   <div class="form-group">
+     <label for="password">Password</label>
+     <input type="password" #password class="form-control" id="password" placeholder="Password">
+   </div>
+   <div class="form-group">
+     <label for="mail">Mail</label>
+     <input type="text" #mail class="form-control" id="mail" placeholder="Mail">
+   </div>
+   <button type="submit" class="btn btn-default">Submit</button>
+ </form>
+ </div>

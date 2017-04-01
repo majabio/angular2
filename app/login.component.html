@@ -1,0 +1,20 @@
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+ <div class="jumbotron vertical-center">
+   <div class = "container">
+   <h1>Login</h1>
+   <form role="form" (submit)="login(username.value)">
+   <div class="form-group">
+     <label for="username">Username</label>
+     <input type="text" #username class="form-control" id="username" placeholder="Username">
+   </div>
+   <div class="form-group">
+     <label for="password">Password</label>
+     <input type="password" #password class="form-control" id="password" placeholder="Password">
+   </div>
+   <button type="submit" class="btn btn-default">Submit</button>
+     <a [routerLink]="['/signup']">Click here to Signup</a>
+ </form>
+   </div>
+ </div>
